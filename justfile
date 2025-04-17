@@ -1,2 +1,2 @@
-sync:
-    cargo run -- -s ~/Developer/quotes/ -t ~/Developer/notes
+build:
+  cargo build --release && cp target/release/highlight_sync ~/bin

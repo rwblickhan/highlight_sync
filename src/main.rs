@@ -6,6 +6,7 @@ use std::fs;
 use std::path::PathBuf;
 use walkdir::WalkDir;
 
+// #KeepArgsInSync
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
 pub struct Args {

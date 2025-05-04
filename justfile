@@ -1,4 +1,4 @@
 alias b := build
 
 build:
-  cargo build --release && cp target/release/highlight_sync ~/bin && cp target/release/highlight_sync.1 ~/man/man1
+  cargo build --release && cp target/release/sync_highlights ~/bin && cp target/release/sync_highlights.1 ~/man/man1

@@ -1,5 +1,5 @@
 [package]
-name = "highlight_sync"
+name = "sync_highlights"
 version = "0.1.0"
 edition = "2021"
 

@@ -20,13 +20,11 @@ pub struct Args {
 }
 
 fn main() -> std::io::Result<()> {
-    // let out_dir = std::path::PathBuf::from("");
-
     let man = clap_mangen::Man::new(Args::command());
     let mut buffer: Vec<u8> = Default::default();
     man.render(&mut buffer)?;
 
-    std::fs::write("target/release/highlight_sync.1", buffer)?;
+    std::fs::write("target/release/sync_highlights.1", buffer)?;
 
     Ok(())
 }
